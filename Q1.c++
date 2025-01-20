@@ -1,6 +1,18 @@
 // Fazer um programa em C que pergunta um valor em metros e imprime o correspondente em decímetros, centímetros e milímetros.
 
+#include <stdio.h>
 #include <iostream>
+#include <algorithm>
+#include <fstream>
+#include <functional>
+#include <iostream>
+#include <locale>
+#include <map>
+#include <set>
+#include <sstream>
+#include <string>
+#include <vector>
+
 using namespace std;
 
 int main() {
