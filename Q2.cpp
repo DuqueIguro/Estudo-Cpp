@@ -1,18 +1,18 @@
 // Fazer um programa em C que imprime uma tabela com a tabuada de 1 a 9
 
-
 #include <stdio.h>
 #include <iostream>
 #include <algorithm>
 #include <fstream>
 #include <functional>
-#include <iostream>
 #include <locale>
 #include <map>
 #include <set>
 #include <sstream>
 #include <string>
 #include <vector>
+
+using namespace std;
 
 int main() {
 
