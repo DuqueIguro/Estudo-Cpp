@@ -10,16 +10,26 @@
 #include <string>
 #include <vector>
 #include <cmath>
+#include <Windows.h>
 
 using namespace std;
+
+/* 
+#define ->  Definir uma constante
+...  variavel  valor;
+*/ 
 
 #define bestIguro cout << "O the best Iguro é o Duque Iguro.\n" << endl;
 
 int main() {
 
-	// cout = Saida de Informação.
-	// cin = Entrada de Informação.
-	//endl = \n no final da linha.
+	/* 
+	cout = Saida de Informação.
+	cin = Entrada de Informação.
+	endl = \n no final da linha.
+	*/
+	
+	SetConsoleOutputCP(CP_UTF8); 
 	
 	cout << " Duque \n Iguro\n" << endl;
 	
