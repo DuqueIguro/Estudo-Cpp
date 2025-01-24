@@ -281,7 +281,16 @@ int main(){
 			        puts("---------------------------------------------- ");
 			        
 			        puts(" - Não use o chat de voz para tocar música, sons ou modificar sua voz de maneira irritante para outros jogadores. Isso se aplica tanto ao Discord quanto ao chat de voz do jogo.\n");
-			        puts(" - \n");
+			        puts(" - Os jogadores não devem roubar itens de outros jogadores ou de baús nos casos a seguir:\n");
+			        puts(" - 3.3.1 Usar de algum cargo alto para abrir um baú alheio.\n");
+			        puts(" - 3.3.2 Obrigar alguém a te dar um item de apoiador ou item de evento durante um assalto.\n");
+			        puts(" - 3.3.3 Obrigar alguém a entregar itens pessoais ou irrelevanteséação.\n");
+			        puts(" --> 3.3.3.1 Tais itens não devem ser utilizados durante a ação caso a vítima já tenha sido rendida. \n");
+			        puts(" - 3.3.4 Usar de seu cargo para chantagear/coagir alguém para te dar algum item.\n");
+			        puts(" --> 3.3.4.1 Com exceção da polícia que pode confiscar itens ilegais, itens confiscados não devem ser usados para benefício práprio.\n");
+			        puts(" - 3.3.5 Usar o mercado negro com um codinome semelhante ao de um jogador existente.\n");
+			        puts(" - 3.3.6 Usar o mercado negro como um chat anônimo sem fins de RP ilegal.\n");
+			        puts(" - 3.3.7 Spawn Kill: Derrubar alguém logo após a pessoa teleportar.\n");
 			        
 					system("pause");
 			        system("cls");
@@ -293,7 +302,14 @@ int main(){
 			        puts("---------------------------------------------- ");
 			        
 			        puts(" - Abusar de alguma mecânica do jogo para cometer anti-rp.\n");
-					puts(" - \n");
+					puts(" - 3.4.1 Se teletransportar usando comandos evitando um roleplay.\n");
+					puts(" - 3.4.2 Abusar de permissão de construção para invadir e roubar um local.\n");
+					puts(" - 3.4.3 Usar as algemas e scanners policiais sem um devido rp (revistar ou prender uma pessoa sem aviso prévio ou consentimento).\n");
+					puts(" - 3.4.4 Usar Ender Pearl para atravessar blocos.\n");
+					puts(" - 3.4.5 Usar cargo alto para acessar lugares que não deveriam (um juiz acessar a prisão sem permissão da defesa).\n");
+					puts(" - 3.4.6 Usar comandos para contornar ou ter vantagens em ações.\n");
+					puts(" - 3.4.7 Usar emotes que escondem sua presença ou identidade.\n");
+					puts(" - 3.4.8 Abusar da proteção anti-griefing das cidades para bloquear portas e esconder baús atrás de blocos de maneira que alguém que não tem permissão de construção não conseguia acessá-los.\n");
 			        
 					system("pause");
 			        system("cls");
@@ -305,7 +321,20 @@ int main(){
 			        puts("---------------------------------------------- ");
 			        
 			        puts(" - Os cadeados e chaves são um sistema para garantir a segurança dos bens dos jogadores, mas existem algumas situações em que eles não são 100% seguros.Abaixo estão algumas orientações sobre como eles devem ser usados.\n");
-			        puts(" - \n");
+			        puts(" - 3.5.1 Não é permitido forçar um cidadão a entregar suas chaves, sejam elas pessoais ou de trabalho.\n");
+			        puts(" - 3.5.2 É permitido roubar uma chave que esteja dentro de baús, sendo de responsabilidade do dono manté-la segura.\n");
+			        puts(" - 3.5.3 É proibido colocar um cadeado em um baú de outrem sem a permissão do mesmo (ex: ao arrombar um baú com lockpick colocar um cadeado para que o dono não possa acessar seus itens ou colocar um cadeado novo).\n");
+			        puts(" - 3.5.4 É proibido colocar um cadeado em portas de outrem sem a permissão do mesmo (ex: ao arrombar uma porta com lockpick, colocar um cadeado nela para que o dono não possa mais ter acesso a sua casa).\n");
+			        puts(" - 3.5.5 Cadeados devem quebrar com um lockpick bem sucedido, caso o mesmo não quebre por motivos de bug ou erro, o cadeado deve ser descartado, sendo proibido usá-lo para descobrir a senha de alguém.\n");
+			        puts(" - 3.5.6 O Abuso de qualquer mecânica das chaves e cadeados, assim como quebrar as regras acima descritas, ocasionará em puniçães á critério da moderação.\n");
+			        puts(" - 3.5.7 Roubos não devem acontecer a menos que haja pelo menos 2 policiais acordados no momento.\n");
+			        puts(" - 3.5.8 Não é permitido roubar itens sem fins ou vantagens pessoais, a fim de apenas incomodar ou prejudicar outro jogador, assim como jogar fora os itens roubados a fim de que os mesmos sejam apagados com o tempo.\n");
+			        puts(" - 3.5.9 Não é permitido roubar o mesmo local sem um intervalo de, no mínimo, 7 dias, sob pena de ter a ação revertida e punições aplicadas.\n");
+			        puts(" - 3.5.10 Não é permitido roubar itens exclusivos e limitados, livros escritos por jogadores, itens de decoração (armaduras em suportes de armadura, livros em estantes de livros)\n");
+			        
+			        cout << "\n" << endl;
+			        
+			        puts("Ao ser demitido o funcionário DEVE devolver suas chaves governamentais assim como TODO seu equipamento. A não devolução de tais itens será considerado Corrupção e pode levar a advertências.");
 			        
 					system("pause");
 			        system("cls");
@@ -316,7 +345,15 @@ int main(){
 					puts("    3.6.0 Griefing/Construções irregulares.");
 			        puts("---------------------------------------------- ");
 			        
-			        puts(" - \n");
+			        puts(" - 3.6.1 Não construa estruturas inapropriadas, que possam ser ofensivas, obscenas, racistas ou de natureza discriminatória.\n");
+			        puts(" - 3.6.2 Não é permitido o roubo de itens decorativos exclusivos, como móveis ou objetos personalizados e exclusivos dentro ou fora de cidades protegidas.\n");
+			        puts(" - 3.6.3 Ao destruir ou construir alguma coisa tem alguns critérios que você deve seguir para que não seja considerado griefing.Entende-se como griefing:\n");
+			        puts(" --> 3.6.3.1 Griefing de Terreno: Destruição deliberada/inconsequente/exagerada dos terrenos pelo mapa de Arísia. O fator determinante da punição é baseado no motivo e tamanho da destruição, sendo julgado pelos ADMs de Arísia. Toda e qualquer destruição que venha a envolver um RP, a comunicação aos Criadores de Arísia é necessária para evitar problemas.\n");
+			        puts(" --> 3.6.3.2 Griefing de Bases/Casas em áreas desprotegidas: Toda e qualquer base/casa construída no ''Interior de Arísia' (Terreno não protegido) está sujeita a Griefing, não existindo uma punição. Exceçães de quando a destruição danifica de forma exagerada. Nesse caso pode se enquadrar em 'Griefing de Terreno', dependendo do julgamento do(s) ADM(s) responsável(veis).\n");
+			        puts(" --> 3.6.3.3 Griefing de cidades: Construço ou destruição em cidade protegida sem a permissão do prefeito da cidade e dono do terreno será considerado griefing e poderá ocasionar em advertências.\n");
+			        puts(" --> 3.6.3.4 Griefing em casas dentro de cidades: Destruição de blocos para invadir propriedades ou danificar sua estrutura (mesmo o prefeito da cidade precisa de permissão do dono do terreno), roubar artigos de decoração, sendo eles blocos colocados, artigos equipados em suporte de armaduras, itens colocados em item-frames e qualquer item que não esteja dentro de um baú/barril/fornalha, fazendo este parte da decoração do local, animais e/ou pets, será considerado griefing e poderá ocasionar em advertências.\n");
+			        puts(" --> 3.6.3.5 Griefing dconstruções públicas: Qualquer destruição ou construção feita para deteriorar ou obstruir uma estrada, placa ou caminho para alguma cidade oficial é considerado griefing.\n");
+			        puts(" --> 3.6.3.6 Griefing de construções Governamentais: Uso de permissão de cargo (engenheiros durante reforma, chefes ou secretários que tenham permissão de destruir ou construir em seu local de trabalho)  para invadir, danificar, obstruir, roubar ou modificar uma construção governamental sem a devida autorização ou ticket aprovado.\n");
 			        
 			        system("pause");
 			        system("cls");
