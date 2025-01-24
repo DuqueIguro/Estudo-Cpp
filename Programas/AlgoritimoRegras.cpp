@@ -15,6 +15,20 @@
 
 using namespace std;
 
+char reset;
+
+// Função para perguntar ao usuário se ele deseja voltar ao início de um tópico
+bool desejaContinuar(string topico) {
+    cout << " Deseja ver mais regras no tópico " << topico << " [s/n]? ";
+    cin >> reset;
+
+    if (reset == 's' || reset == 'S') {
+        system("cls");
+        return true; // Usuário deseja continuar
+    }
+    return false; // Usuário não deseja continuar
+}
+
 int main(){
     SetConsoleOutputCP(CP_UTF8);
 
@@ -42,7 +56,8 @@ int main(){
         }
 
         if (opcao == "1") { // Exibe os topicos de Regras Gerais da Comunidade
-            puts("---------------------------------------------- ");
+            inicioGeral:
+			puts("---------------------------------------------- ");
             cout << "      1.0.0 Regras Gerais da comunidade: " << endl; 
             puts("---------------------------------------------- ");
             puts(" - 1.1.0 Respeito e Tolerância.\n");
@@ -70,7 +85,10 @@ int main(){
 			        
 			        puts("---------------------------------------------- ");
 			        
-			        system("pause");
+			        if (desejaContinuar("1.0.0 Regras Gerais da comunidade")) {
+                        goto inicioGeral;
+                    }
+					
 			        system("cls");
 			        break;	
 			    
@@ -87,9 +105,12 @@ int main(){
 			        puts(" - 1.2.6 Evite mencionar ou mandar mensagem no privado da Staff sem ser solicitado, o mesmo serve para dentro do jogo quando o membro da staff não está com a tag depois do nome. \n");
 			        puts(" - 1.2.7 Não compartilhe conteúdo privado dos membros ou da staff. Isso inclui mas não se limita a: questões de tickets, advertências ou punições, informações dos chats da staff.\n");
 			        
-			        puts("---------------------------------------------- ");                
+			        puts("---------------------------------------------- ");  
+					
+					if (desejaContinuar("1.0.0 Regras Gerais da comunidade")) {
+                        goto inicioGeral;
+                    }              
 			        
-			        system("pause");
 			        system("cls");
 			        break;
 			    
@@ -107,9 +128,10 @@ int main(){
 			        puts(" --> 1.3.3.1 Exemplo: Em caso de banimento, criar outra conta para ter acesso ao servidor.\n");
 			        puts(" - 1.3.4 Ao sair do servidor do Discord principal de Arísia você abdica de todo o seu progresso dentro do jogo, a administração não necessariamente irá apagar todos os seus dados, mas isso pode ser feito caso necessário, por conta da impossibilidade de comunicação com o dono da conta.\n");
 			        
-			        puts("---------------------------------------------- "); 
+			        if (desejaContinuar("1.0.0 Regras Gerais da comunidade")) {
+                        goto inicioGeral;
+                    }
 			        
-			        system("pause");
 			        system("cls");
 			        break;
 			    
@@ -131,7 +153,10 @@ int main(){
 			        
 			        puts("---------------------------------------------- ");
 			        
-			        system("pause");
+			        if (desejaContinuar("1.0.0 Regras Gerais da comunidade")) {
+                        goto inicioGeral;
+                    }
+			        
 			        system("cls");
 			        break;
 			    
@@ -142,7 +167,12 @@ int main(){
 			        
 			        puts(" Para utilizar contas secundárias, tanto no jogo quanto no Discord, é necessário ter permissão dos ADMs. Caso não haja permissão, uma advertência pode ser dada na conta principal.");
 			        
-			        system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("1.0.0 Regras Gerais da comunidade")) {
+                        goto inicioGeral;
+                    }
+			        
 			        system("cls");
 			        break;
 			    
@@ -153,6 +183,7 @@ int main(){
 		} 
 		
 		else if (opcao == "2") {
+			inicioDiscord:
             puts("---------------------------------------------- ");
             cout << "      2.0.0 Regras de Discord: " << endl; 
             puts("---------------------------------------------- ");
@@ -177,7 +208,10 @@ int main(){
 
 			        puts("---------------------------------------------- ");
 			        
-			        system("pause");
+			        if (desejaContinuar("2.0.0 Regras do Discord")) {
+                        goto inicioDiscord;
+                    }
+			        
 			        system("cls");
 			        break;
 			    
@@ -190,7 +224,10 @@ int main(){
 			        
 			        puts("---------------------------------------------- ");                
 			        
-			        system("pause");
+			        if (desejaContinuar("2.0.0 Regras do Discord")) {
+                        goto inicioDiscord;
+                    }
+			        
 			        system("cls");
 			        break;
 			    
@@ -201,9 +238,12 @@ int main(){
 			        
 			        puts(" - 2.3.1 Além das regras específicas da comunidade, também é importante cumprir as diretrizes e termos de serviço do Discord. Isso inclui não enviar mensagens em massa, não criar spam ou realizar atividades que violem as políticas do Discord e também ter 13 anos ou mais.\n");
 			        
-			        puts("---------------------------------------------- "); 
-			        
-			        system("pause");
+			        puts("---------------------------------------------- ");
+					
+					if (desejaContinuar("2.0.0 Regras do Discord")) {
+                        goto inicioDiscord;
+                    }
+					
 			        system("cls");
 			        break;
 			    
@@ -217,7 +257,10 @@ int main(){
 			        
 			        puts("---------------------------------------------- ");
 			        
-			        system("pause");
+			        if (desejaContinuar("2.0.0 Regras do Discord")) {
+                        goto inicioDiscord;
+                    }
+			        
 			        system("cls");
 			        break;
 			    
@@ -226,8 +269,9 @@ int main(){
 			        break;
 			}
 		}
-		
+	
 		else if (opcao == "3") {
+			inicioMinecraft:
             puts("---------------------------------------------- ");
             cout << "      3.0.0 Regras de Minecraft: " << endl; 
             puts("---------------------------------------------- ");
@@ -256,7 +300,12 @@ int main(){
 			        puts(" --> 3.1.1.1 Qualquer mod, textura ou programa externo que proporcione vantagens injustas, ou informações privilegiadas dentro do contexto do roleplay.");
 			        puts(" --> 3.1.1.2 Qualquer programa ou mod catalogado na nossa lista de mods proibidos.");
 			        
-					system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("3.0.0 Regras do Minecraft")) {
+                        goto inicioMinecraft;
+                    }
+					
 			        system("cls");
 			        break;
 			    
@@ -271,7 +320,12 @@ int main(){
 			        puts(" --> 3.2.1.Roleplays de criminosos que precisam de acesso aos crafts ocultos.\n");
 			        puts(" --> 3.2.1.Roleplays de criminosos que querem roubar locais governamentais (delegacia, hospital, tabelionato e afins).\n");
 			        
-					system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("3.0.0 Regras do Minecraft")) {
+                        goto inicioMinecraft;
+                    }
+					
 			        system("cls");
 			        break;
 			    
@@ -292,7 +346,12 @@ int main(){
 			        puts(" - 3.3.6 Usar o mercado negro como um chat anônimo sem fins de RP ilegal.\n");
 			        puts(" - 3.3.7 Spawn Kill: Derrubar alguém logo após a pessoa teleportar.\n");
 			        
-					system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("3.0.0 Regras do Minecraft")) {
+                        goto inicioMinecraft;
+                    }
+					
 			        system("cls");
 			        break;
 			    
@@ -311,7 +370,12 @@ int main(){
 					puts(" - 3.4.7 Usar emotes que escondem sua presença ou identidade.\n");
 					puts(" - 3.4.8 Abusar da proteção anti-griefing das cidades para bloquear portas e esconder baús atrás de blocos de maneira que alguém que não tem permissão de construção não conseguia acessá-los.\n");
 			        
-					system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("3.0.0 Regras do Minecraft")) {
+                        goto inicioMinecraft;
+                    }
+					
 			        system("cls");
 			        break;
 			    
@@ -332,11 +396,14 @@ int main(){
 			        puts(" - 3.5.9 Não é permitido roubar o mesmo local sem um intervalo de, no mínimo, 7 dias, sob pena de ter a ação revertida e punições aplicadas.\n");
 			        puts(" - 3.5.10 Não é permitido roubar itens exclusivos e limitados, livros escritos por jogadores, itens de decoração (armaduras em suportes de armadura, livros em estantes de livros)\n");
 			        
-			        cout << "\n" << endl;
-			        
 			        puts("Ao ser demitido o funcionário DEVE devolver suas chaves governamentais assim como TODO seu equipamento. A não devolução de tais itens será considerado Corrupção e pode levar a advertências.");
 			        
-					system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("3.0.0 Regras do Minecraft")) {
+                        goto inicioMinecraft;
+                    }
+					
 			        system("cls");
 			        break;
 			    
@@ -355,7 +422,12 @@ int main(){
 			        puts(" --> 3.6.3.5 Griefing dconstruções públicas: Qualquer destruição ou construção feita para deteriorar ou obstruir uma estrada, placa ou caminho para alguma cidade oficial é considerado griefing.\n");
 			        puts(" --> 3.6.3.6 Griefing de construções Governamentais: Uso de permissão de cargo (engenheiros durante reforma, chefes ou secretários que tenham permissão de destruir ou construir em seu local de trabalho)  para invadir, danificar, obstruir, roubar ou modificar uma construção governamental sem a devida autorização ou ticket aprovado.\n");
 			        
-			        system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("3.0.0 Regras do Minecraft")) {
+                        goto inicioMinecraft;
+                    }
+			        
 			        system("cls");
 			        break;
 			    
@@ -366,7 +438,12 @@ int main(){
 			        
 			        puts(" É proibida a construção de farms de xp e mobtrap. A construção de qualquer farm de xp e/ou mobtrap acarretará em advertência.");
 			        
-					system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("3.0.0 Regras do Minecraft")) {
+                        goto inicioMinecraft;
+                    }
+			        
 			        system("cls");
 			        break;
 			    
@@ -377,7 +454,12 @@ int main(){
 			        
 			        puts(" É proibida a construção de qualquer farm automática. Para farms semiautomáticas, abra um ticket para que um membro da administração avalie sua ideia.");
 			        
-			        system("pause");
+			        puts("---------------------------------------------- ");
+			        
+			        if (desejaContinuar("3.0.0 Regras do Minecraft")) {
+                        goto inicioMinecraft;
+                    }
+					
 			        system("cls");
 			        break;
 			    
@@ -395,6 +477,8 @@ int main(){
             puts(" - 4.1 As regras descritas aqui neste algoritimo servem para todos os membros, e isso inclui quem nos apoia, sendo com doação monetária ou com impulso no servidor do Discord. Ao apoiar o servidor de Arísia RP, nenhuma exceção é imposta. Ao quebrar as regras, a punição é aplicada independentemente de suporte, sendo doação ou impulso de servidor.\n");
             puts(" Você tem total direito de utilizar os cosméticos fornecidos pelo sistema de apoiador, porém, isso pode ser impedido no caso de descumprimento de regras e na ocasião de ban.\n");
             
+            puts("---------------------------------------------- ");
+            
             system("pause");
             system("cls");
         } 
@@ -402,7 +486,7 @@ int main(){
 		else {
             cout << "Opção inválida!" << endl;
         }
-    }
-
-    return 0;
+    } 
+	
+	return 0;
 }
