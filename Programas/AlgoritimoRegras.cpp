@@ -280,6 +280,9 @@ int main(){
 					puts("          3.3.0 Anti-jogo / Anti-RP.");
 			        puts("---------------------------------------------- ");
 			        
+			        puts(" - Não use o chat de voz para tocar música, sons ou modificar sua voz de maneira irritante para outros jogadores. Isso se aplica tanto ao Discord quanto ao chat de voz do jogo.\n");
+			        puts(" - \n");
+			        
 					system("pause");
 			        system("cls");
 			        break;
@@ -288,6 +291,9 @@ int main(){
 			        puts("---------------------------------------------- ");
 					puts("           3.4.0 Abuso de Mecânica.");
 			        puts("---------------------------------------------- ");
+			        
+			        puts(" - Abusar de alguma mecânica do jogo para cometer anti-rp.\n");
+					puts(" - \n");
 			        
 					system("pause");
 			        system("cls");
@@ -298,6 +304,9 @@ int main(){
 					puts("        3.5.0 Uso das Chaves e Cadeados.");
 			        puts("---------------------------------------------- ");
 			        
+			        puts(" - Os cadeados e chaves são um sistema para garantir a segurança dos bens dos jogadores, mas existem algumas situações em que eles não são 100% seguros.Abaixo estão algumas orientações sobre como eles devem ser usados.\n");
+			        puts(" - \n");
+			        
 					system("pause");
 			        system("cls");
 			        break;
@@ -306,6 +315,8 @@ int main(){
 			        puts("---------------------------------------------- ");
 					puts("    3.6.0 Griefing/Construções irregulares.");
 			        puts("---------------------------------------------- ");
+			        
+			        puts(" - \n");
 			        
 			        system("pause");
 			        system("cls");
