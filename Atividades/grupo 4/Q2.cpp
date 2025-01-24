@@ -53,4 +53,3 @@ int fatorial_r(){
 
 	return 0;
 }
-
