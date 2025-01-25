@@ -86,3 +86,12 @@ int main() {
 
     return 0;
 }
+
+/*
+	Name: Algoritmo de Comandos
+	Copyright: Arísia Roleplay
+	Author: DuqueIguro
+	Date: 25/01/25 10:48
+	Description: Um algoritimo que gera comandos de Minecraft distintos com base na escolha do usuario e na lista de nomes fornecidos pelo usúario
+*/
+

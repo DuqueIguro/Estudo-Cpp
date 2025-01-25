@@ -1,5 +1,5 @@
 /* Questão X do Grupo Y
-	Codigo Padrão para Copiar e Colar
+	
 */
 
 #include <stdio.h>
@@ -23,3 +23,10 @@ int main(){
 	
 	return 0;
 }
+
+/*
+	Name: 
+	Author: 
+	Date: XX/XX/XX 00:00
+	Description: 
+*/

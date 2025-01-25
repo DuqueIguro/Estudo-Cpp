@@ -30,6 +30,7 @@ bool desejaContinuar(string topico) {
 }
 
 int main(){
+	
     SetConsoleOutputCP(CP_UTF8);
 
     string opcao;
@@ -490,3 +491,10 @@ int main(){
 	
 	return 0;
 }
+
+/*
+	Name: Algoritmo de Regras
+	Author: DuqueIguro
+	Date: 25/01/25 11:13
+	Description: Um algoritmo para exibição de todas as regras do Servidor Arísia, separadas por categoria.
+*/

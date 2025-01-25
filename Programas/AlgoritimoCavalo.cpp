@@ -108,3 +108,11 @@ int main()
 	system("pause");
     return 0;
 }
+
+/*
+	Name: Algoritmo de Cavalo
+	Copyright: Arísa Roleplay
+	Author: EidenFox
+	Date: 22/01/25 17:21
+	Description: Um algoritmo que calcula os status de um cavalo a partir de uma regra de três e gera um comando de minecraft que summona um cavalo com aqueles status.
+*/
