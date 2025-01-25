@@ -20,19 +20,22 @@
 
 using namespace std;
 
-// Função para ler nomes separados por vírgulas
 void lerNicks(string nicks[], int &i) {
-    cout << "Digite os nomes das pessoas que quer adicionar a permissão (separados por vírgulas e sem espaços): ";
+    puts("---------------------------------------------- ");
     
-    string linha;
+	cout << "Digite os nomes das pessoas que quer adicionar a permissão (separados por vírgulas e sem espaços): ";
+	
+	string linha;
     
-    getline(cin, linha); // Lê a linha inteira de entrada
+    getline(cin, linha); // Lê a linha inteira de entrada.
 
     stringstream ss(linha); // Cria uma caixa (stringstream) com a string linha dentro.
     
     string nome;
+	
+    puts("\n---------------------------------------------- ");
     
-    while (getline(ss, nome, ',')) { // Separa os nomes com base nas vírgulas e armazena cada nome no array 'nicks'
+    while (getline(ss, nome, ',')) { // Separa os nomes com base nas vírgulas e armazena cada nome na variavel 'nicks'.
         if (i < 50) {
             nicks[i] = nome;
             i++;
@@ -48,7 +51,6 @@ int main() {
 
     string nicks[50], escolha;
     int i = 0;
-    bool continuar = true;
 
     puts("---------------------------------------------- ");
     puts("\n");
@@ -59,20 +61,24 @@ int main() {
     puts("---------------------------------------------- ");
 
     cout << "Digite a opção desejada ou 'exit' para sair: "; 
-    cin >> escolha; 
-
+    cin >> escolha;
+	cin.ignore(); // Ignora o caractere de nova linha que fica no buffer de entrada
+	
     if (escolha == "exit") { // Verifica se o usuário deseja sair
         return 0; 
     }
 
     if (escolha == "1"){ // Socorrista
-        lerNicks(nicks, i); // Chama a função para ler os nomes
-        for (int j = 0; j < i; j++) {
+        lerNicks(nicks, i); // Função para ler os nomes.
+        for (int j = 0; j < i; j++) { // Imprime uma lista com todos os nomes já implementados no comando
             cout << "/lp user " << nicks[j] << " parent remove socorrista" << endl;
         }
     } 
     else if (escolha == "2"){ // Modelo
-        // Adicione a lógica para a opção 2 aqui
+        lerNicks(nicks, i);
+        for (int j = 0; j < i; j++) {
+            cout << "/lp user " << nicks[j] << " permission set cpm.whitelist" << endl;
+        }
     } 
     else {
         cout << "Opção inválida!" << endl;
