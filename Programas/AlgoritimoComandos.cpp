@@ -1,4 +1,4 @@
-/*
+/* Questão 1 e 2 Grupo Arisia
 	1.Gerar um algoritmo que receba uma lista de nomes e converta em um comando de minecraft que faça a atribuição da permissão de uso de modelos.
 	
 	2.Gerar um algoritmo que receba uma lista de nomes e converta em um comando de minecraft que faça a remoção da permissão de socorrista.
