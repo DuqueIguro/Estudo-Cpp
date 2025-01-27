@@ -188,3 +188,12 @@ int main() {
 
 	return 0;
 }
+
+/*
+	Name: Algoritmo de Aplicação de Punição e Criação de Relatório
+	Copyright: Arísia Roleplay
+	Author: DuqueIguro
+	Date: 25/01/25 23:03
+	Description: É um algoritmo que recebe a numeração das infrações e gera uma advertencia ou relatório com as infrações informadas;
+*/
+
