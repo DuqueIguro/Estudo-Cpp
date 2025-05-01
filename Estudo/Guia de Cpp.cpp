@@ -50,7 +50,7 @@ void demonstrarIncremento() {
     
     cout << "Pré-fixado (++var): " << ++var << endl; // Incrementa antes de exibir.
     
-    var--;
+    var--; // Decrementa o valor em 1, voltando para o valor orinal.
     
     cout << "Pós-fixado (var++): " << var++ << endl; // Exibe antes de incrementar.
     
@@ -222,6 +222,77 @@ void demonstrarSwitch(){
 	}
 }
 
+// Função para demonstrar uso de laços
+void demonstrarLacos(){
+	
+	int cont, x;
+	
+	cont = 1;
+	
+	/* WHILE
+	 while(){}; = Enquanto essa condição for verdadeira execute isso.
+	 do{} while(); = garante que o bloco de comando do while seja executado pelo menos uma vez.
+	*/
+	
+	do{
+		cout << "Teste - " << cont << endl;
+		cont++;	
+	} while(cont< 11);
+	
+	puts("---------------------------------------------- ");
+	
+	// Inacialização de variavel | Condição | Incremento ou Decremento
+	for(x = 100; x < 110; x++){
+		
+		cout << x << endl;
+		
+	}
+	
+	puts("---------------------------------------------- ");
+
+	/* Também é possivel usar o for sem corpo para servir como temporizador
+		Exemplo: for(int temp = 0; temp < 10000000; temp++);
+	*/
+	
+	puts("Laço While finalizado");
+	
+}
+
+// Função para demonstrar o uso de vetores, arrays e matrizes
+void demonstrarVetores(){
+	int vetor[5]={10,20,30,40,50}, i;
+	
+	/*
+		- Cada Array consome 4bits de memoria.
+		- sizeof = informará o tamanho daquele vetor em bits, então precisamos dividir por 4.
+	*/
+	
+	for(i = 0; i < sizeof(vetor) / 4; i++){
+		cout << vetor[i] << endl;
+	}
+
+	puts("---------------------------------------------- ");
+	
+	// [Linhas][Colunas]
+	int matriz[3][4];
+	int l, c;
+	
+	// For que adiciona os 
+	for(l = 0; l < 3; l++){
+		for(c = 0; c < 4; c++){
+			matriz[l][c] = l;
+		}
+	}
+	
+	// For que exibe os resultados
+	for(l = 0; l < 3; l++){
+		for(c = 0; c < 4; c++){
+			cout << matriz[l][c] << " ";
+		}
+		puts("\n");
+	}
+}
+
 // Função Principal
 int main() {
 	/* Entrada e Saída de dados 
@@ -237,13 +308,17 @@ int main() {
     bestIguro;
 
     // Execução das funções de demonstração
-    demonstrarVariaveis();
-    demonstrarIncremento();
-    //FUNÇÃO COM ERRO -> demonstrarStringManipulacao();
-    demonstrarReferencias();
-    demonstrarOperacoesCondicionais();
-    demonstrarOperadoresTernarios();
-    demonstrarSwitch();
+    /*
+		demonstrarVariaveis();
+	    demonstrarIncremento();
+	    demonstrarStringManipulacao();
+	    demonstrarReferencias();
+	    demonstrarOperacoesCondicionais();
+	    demonstrarOperadoresTernarios();
+	    demonstrarSwitch();
+	    demonstrarLacos();
+	    demonstrarVetores();
+	*/
 
     system("pause"); // Aguarda entrada do usuário para continuar
     system("cls"); // Limpa o terminal
