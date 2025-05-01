@@ -18,8 +18,23 @@
 
 using namespace std;
 
+char reset;
+
+bool desejaContinuar(void) {
+    cout << " Deseja [...] [s/n] ";
+    cin >> reset;
+
+    if (reset == 's' || reset == 'S') {
+        system("cls");
+        return true; 
+    }
+    return false; 
+}
+
 int main(){
 	SetConsoleOutputCP(CP_UTF8);
+	
+	inicio:
 	
 	return 0;
 }

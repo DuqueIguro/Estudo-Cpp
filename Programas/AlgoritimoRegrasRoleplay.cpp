@@ -90,7 +90,7 @@ int main(){
 	        puts(" - 1.2.2 Caso um jogador conscientemente coloque seu personagem em uma cargo arriscado (aceitar um cargo de risco como Governador ou Imperador, à critério da administração).\n");
 	        puts(" - 1.2.3 Quando suas ações podem gerar impactos negativos extremos (ex: participar de ações terroristas ou extremas).\n");
 	    	puts(" - 1.2.4 Caso um jogador espontaneamente coloque seu personagem em uma situação de risco extremo (ex: um jogador coloca seu personagem em contato prolongado com uma doença desconhecida ou que as autoridades recomendaram distância).\n");
-			puts(" - 1.2.5 A Administração se reserva o direito de forçar um PD em situações específicas para manter o funcionamento do servidor.");
+			puts(" - 1.2.5 A Administração se reserva o direito de forçar um PD em situações específicas para manter o funcionamento do servidor.\n");
 			puts(" - 1.2.6 Caso seu personagem sofra PD todos os bens do personagem como itens, dinheiro e níveis de habilidades serão perdidos (salvo itens de membro ou os adquiridos em eventos pois os mesmos continuam vinculados ao jogador).");
 			
 			puts("---------------------------------------------- ");
@@ -246,7 +246,7 @@ int main(){
 	        cout << "         1.9.0 Roleplay de Facção: " << endl; 
 	        puts("---------------------------------------------- ");
 	        
-	        cout << "Fundação de facção.\n" << endl;
+	        cout << "Fundação de facção:\n" << endl;
 	
 	        puts(" - Para fundar uma facção, é necessário entrar em contato com os Criadores e adquirir permissão para criar uma facção. Se for possível, os criadores darão continuidade ao processo de fundação. Tenha em mente o nome da sua organização. Saiba que uma vez escolhido, não será possível alterar. Também é importante especificar o nome do dono. \n");
 	        
